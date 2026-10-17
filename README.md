@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="./Your%20paragraph%20text.gif"
+    width="100%"
+    alt="SiriusX cosmic background"
+  />
+</p>
+
 ## Hi there 👋
 <!--
 **siriusx0112/siriusx0112** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
