@@ -1,8 +1,8 @@
 <p align="center">
   <img
-    src="./Your%20paragraph%20text.gif"
+    src="./assets/Profile%20Header.gif"
     width="100%"
-    alt="SiriusX cosmic background"
+    alt="SiriusX Profile Header"
   />
 </p>
 
