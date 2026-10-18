@@ -7,6 +7,13 @@
 </p>
 
 ## This is SirusX✨️
+<div align="center">
+  <img
+    src="./assets/contributions.svg"
+    alt="SiriusX Contribution Heatmap"
+    width="100%"
+  />
+</div>
 <!--
 **siriusx0112/siriusx0112** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
