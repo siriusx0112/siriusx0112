@@ -12,17 +12,17 @@ TOKEN = os.environ["GITHUB_TOKEN"]
 OUTPUT = Path("assets/contributions.svg")
 
 COLORS = {
-    "NONE": "#080D1B",
+    "NONE": "#171022",
     "FIRST_QUARTILE": "#21103D",
     "SECOND_QUARTILE": "#5720A5",
     "THIRD_QUARTILE": "#8538F5",
-    "FOURTH_QUARTILE": "#D9B8FF",
+    "FOURTH_QUARTILE": "#AD70FF",
 }
 
-BACKGROUND = "#080D1B"
-TEXT = "#D8F6FF"
-MUTED = "#7FA8CB"
-CYAN = "#00CFFF"
+BACKGROUND = "#090610"
+TEXT = "#F1E8FF"
+MUTED = "#A995C9"
+CYAN = "#D9B8FF"
 
 today = datetime.now(timezone.utc).date()
 start = today - timedelta(days=364)
@@ -86,7 +86,7 @@ cell = 11
 gap = 4
 step = cell + gap
 left = 38
-top = 53
+top = 70
 right = 20
 bottom = 30
 
@@ -104,9 +104,16 @@ svg = [
     f'<desc id="desc">{total} GitHub contributions in the last year.</desc>',
     """
     <defs>
-      <radialGradient id="nebula">
-        <stop offset="0%" stop-color="#123D70" stop-opacity=".65"/>
-        <stop offset="100%" stop-color="#080D1B" stop-opacity="0"/>
+      <radialGradient id="nebulaTL" cx="0%" cy="0%" r="100%">
+        <stop offset="0%" stop-color="#5720A5" stop-opacity=".24"/>
+        <stop offset="55%" stop-color="#21103D" stop-opacity=".12"/>
+        <stop offset="100%" stop-color="#090610" stop-opacity="0"/>
+      </radialGradient>
+
+      <radialGradient id="nebulaBR" cx="100%" cy="100%" r="85%">
+        <stop offset="0%" stop-color="#8538F5" stop-opacity=".18"/>
+        <stop offset="50%" stop-color="#21103D" stop-opacity=".08"/>
+        <stop offset="100%" stop-color="#090610" stop-opacity="0"/>
       </radialGradient>
       <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
         <feGaussianBlur stdDeviation="2" result="blur"/>
@@ -118,11 +125,12 @@ svg = [
     </defs>
     """,
     f'<rect width="{width}" height="{height}" rx="14" fill="{BACKGROUND}"/>',
-    f'<rect width="{width}" height="{height}" rx="14" fill="url(#nebula)"/>',
+    f'<rect width="{width}" height="{height}" rx="14" fill="url(#nebulaTL)"/>',
+    f'<rect width="{width}" height="{height}" rx="14" fill="url(#nebulaBR)"/>',
     (
         f'<rect x=".5" y=".5" width="{width - 1}" '
         f'height="{height - 1}" rx="13.5" '
-        'fill="none" stroke="#18395B"/>'
+        'fill="none" stroke="#392052"/>'
     ),
     (
         f'<text x="17" y="22" fill="{CYAN}" '
@@ -148,7 +156,7 @@ for x, y, radius in [
 ]:
     svg.append(
         f'<circle cx="{int(width * x)}" cy="{int(height * y)}" '
-        f'r="{radius}" fill="#BDEFFF" opacity=".6"/>'
+        f'r="{radius}" fill="#D9B8FF" opacity=".6"/>'
     )
 
 # Weekday labels
