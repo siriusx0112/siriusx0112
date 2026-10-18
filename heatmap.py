@@ -12,11 +12,11 @@ TOKEN = os.environ["GITHUB_TOKEN"]
 OUTPUT = Path("assets/contributions.svg")
 
 COLORS = {
-    "NONE": "#17213B",
-    "FIRST_QUARTILE": "#174A7E",
-    "SECOND_QUARTILE": "#176FAF",
-    "THIRD_QUARTILE": "#00B8F0",
-    "FOURTH_QUARTILE": "#8AF5FF",
+    "NONE": "#080D1B",
+    "FIRST_QUARTILE": "#21103D",
+    "SECOND_QUARTILE": "#5720A5",
+    "THIRD_QUARTILE": "#8538F5",
+    "FOURTH_QUARTILE": "#D9B8FF",
 }
 
 BACKGROUND = "#080D1B"
