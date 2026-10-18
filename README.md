@@ -1,12 +1,12 @@
 <p align="center">
   <img
-    src="./assets/Profile%20Header.gif"
+    src="./assets/Your%20paragraph%20text_20261018_063247_0000.gif"
     width="100%"
     alt="SiriusX Profile Header"
   />
 </p>
 
-## Hi there 👋
+## This is SirusX✨️
 <!--
 **siriusx0112/siriusx0112** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
