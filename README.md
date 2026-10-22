@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="./assets/Your%20paragraph%20text_20261018_063247_0000.gif"
+    src="./assets/Header.gif"
     width="100%"
     alt="SiriusX Profile Header"
   />
