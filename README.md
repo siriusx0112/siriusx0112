@@ -6,7 +6,7 @@
   />
 </p>
 
-## This is SirusX✨️
+## This is SiriusX✨️
 <div align="center">
   <img
     src="./assets/contributions.svg"
